@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+input[type="checkbox"]:checked + div {  
+    @apply bg-blue-500;
+    @apply border-0;
+    @apply text-white;
+}  
+
+input[type="checkbox"]:checked + div svg {  
+    @apply block;  
+}
+
+input[type="checkbox"]:disabled + div {  
+    @apply border-gray-200
+}
