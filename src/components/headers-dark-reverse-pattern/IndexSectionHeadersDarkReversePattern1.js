@@ -1,7 +1,36 @@
 import React from "react";
 
 export default function IndexSectionHeadersDarkReversePattern1() {
+  React.useEffect(() => {
+    var promise = ref.current.pause();
+
+    if (promise !== undefined) {
+      promise
+        .then((_) => {
+          // Autoplay started!
+        })
+        .catch((error) => {
+          // Autoplay was prevented.
+          // Show a "Play" button so that user can start playback.
+          console.log(error);
+        });
+    }
+  }, []);
+  const [isPlaying, setIsPlaying] = React.useState(false);
   const [navOpen, setNavOpen] = React.useState(false);
+  const ref = React.useRef(null);
+
+  const handleClick = () => {
+    const nextIsPlaying = !isPlaying;
+    setIsPlaying(nextIsPlaying);
+
+    if (nextIsPlaying) {
+      ref.current.play();
+    } else {
+      ref.current.pause();
+    }
+  };
+
   return (
     <React.Fragment>
       <>
@@ -269,13 +298,23 @@ export default function IndexSectionHeadersDarkReversePattern1() {
               {" "}
               <div className="relative z-20 px-8 max-w-max mx-auto">
                 {" "}
-                <img
-                  src="https://static.shuffle.dev/uploads/files/b0/b0f89fa6cd6263ad0469015a5dd9e4a83056f302/video.jpg"
-                  alt
-                />{" "}
+                <video
+                  muted
+                  loop
+                  poster="https://static.shuffle.dev/uploads/files/cc/cce6580999c8067e23bb4a662dea535a74b463e5/Screen-Shot-2024-09-12-at-12-19-20-PM.jpg"
+                  id="bgvid"
+                  ref={ref}
+                  onPlay={() => setIsPlaying(true)}
+                  onPause={() => setIsPlaying(false)}
+                >
+                  <source src="bg.webm" type="video/webm" />
+                  <source src="bg.mp4" type="video/mp4" />
+                </video>
                 <a
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block px-8 py-3.5 text-lg text-center text-gray-900 font-bold bg-gray-50 hover:bg-gray-200 focus:ring-4 focus:ring-gray-200 rounded-full"
-                  href="#"
+                  className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block px-8 py-3.5 text-lg text-center text-gray-900 font-bold bg-gray-50 hover:bg-gray-200 focus:ring-4 focus:ring-gray-200 rounded-full ${
+                    isPlaying ? `hidden` : ``
+                  }`}
+                  onClick={handleClick}
                 >
                   Watch Video
                 </a>{" "}
