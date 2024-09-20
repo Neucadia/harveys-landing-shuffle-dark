@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function IndexSectionHeadersDarkReversePattern1() {
+  const [navOpen, setNavOpen] = React.useState(false);
   return (
     <React.Fragment>
       <>
@@ -96,7 +97,10 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                     </div>{" "}
                     <div className="w-auto lg:hidden">
                       {" "}
-                      <button className="inline-block">
+                      <button
+                        className="inline-block"
+                        onClick={() => setNavOpen((prevState) => !prevState)}
+                      >
                         {" "}
                         <svg
                           className="text-green-600"
@@ -129,8 +133,16 @@ export default function IndexSectionHeadersDarkReversePattern1() {
               </div>{" "}
               <div className="fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 block">
                 {" "}
-                <div className="fixed inset-0 bg-gray-800 opacity-80" />{" "}
-                <nav className="relative z-10 px-9 pt-8 bg-gray-900 h-full overflow-y-auto">
+                <div
+                  className={`inset-0 bg-gray-800 opacity-80 ${
+                    navOpen ? `fixed` : `hidden`
+                  }`}
+                />
+                <nav
+                  className={`relative z-10 px-9 pt-8 bg-gray-900 h-full overflow-y-auto ${
+                    navOpen ? `relative` : `hidden`
+                  }`}
+                >
                   {" "}
                   <div className="flex flex-wrap justify-between h-full">
                     {" "}
@@ -143,14 +155,19 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                           <a className="inline-block" href="#">
                             {" "}
                             <img
-                              src="zanrly-assets/logos/zanrly-logo-white.svg"
+                              src="https://static.shuffle.dev/uploads/files/b0/b0f89fa6cd6263ad0469015a5dd9e4a83056f302/logo-png-1726158335343.webp"
                               alt
                             />{" "}
                           </a>{" "}
                         </div>{" "}
                         <div className="w-auto p-2">
                           {" "}
-                          <button className="inline-block">
+                          <button
+                            className="inline-block"
+                            onClick={() =>
+                              setNavOpen((prevState) => !prevState)
+                            }
+                          >
                             {" "}
                             <svg
                               width={24}
