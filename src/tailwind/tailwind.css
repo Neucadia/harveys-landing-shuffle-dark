@@ -4,16 +4,65 @@
 
 @tailwind utilities;
 
-input[type="checkbox"]:checked + div {  
-    @apply bg-blue-500;
-    @apply border-0;
-    @apply text-white;
-}  
-
-input[type="checkbox"]:checked + div svg {  
-    @apply block;  
+input[type="checkbox"]:checked + div {
+  @apply bg-blue-500;
+  @apply border-0;
+  @apply text-white;
 }
 
-input[type="checkbox"]:disabled + div {  
-    @apply border-gray-200
+input[type="checkbox"]:checked + div svg {
+  @apply block;
+}
+
+input[type="checkbox"]:disabled + div {
+  @apply border-gray-200;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
+nav {
+  overflow: scroll;
+  scrollbar-color: #364c82 #080f20;
+  scrollbar-width: thin;
+}
+
+.nested > li > ul {
+  visibility: hidden;
+  flex-direction: column;
+  position: relative;
+  z-index: 1000;
+}
+
+.nested > li > a:focus ~ ul {
+  visibility: visible;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nested > li > a ~ ul > li {
+  --tw-bg-opacity: 1;
+  background-color: #111827;
+  border-top: 1px solid #263351;
+  border-bottom: 1px solid #06090f;
+}
+
+.nested .nested li {
+  margin-left: 0;
 }

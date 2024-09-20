@@ -1,4 +1,200 @@
 import React from "react";
+import { ReactNestedMenu } from "react-nested-menu";
+
+const menu = [
+  {
+    id: 1,
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: 2,
+    title: "Store",
+    url: "/#",
+    children: [
+      {
+        id: 3,
+        title: "Men",
+        url: "/#",
+      },
+      {
+        id: 4,
+        title: "Women",
+        url: "/#",
+      },
+      {
+        id: 5,
+        title: "Kids",
+        url: "/#",
+      },
+      {
+        id: 6,
+        title: "Footwear",
+        url: "/#",
+      },
+      {
+        id: 7,
+        title: "Pet",
+        url: "/#",
+      },
+      {
+        id: 8,
+        title: "Brands",
+        url: "/#",
+      },
+      {
+        id: 9,
+        title: "Events",
+        url: "/#",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Seed",
+    url: "/#",
+    children: [
+      {
+        id: 3,
+        title: "Corn",
+        url: "/#",
+      },
+      {
+        id: 4,
+        title: "Soybeans",
+        url: "/#",
+      },
+      {
+        id: 5,
+        title: "Wheat",
+        url: "/#",
+      },
+      {
+        id: 6,
+        title: "Cover Crop",
+        url: "/#",
+      },
+      {
+        id: 7,
+        title: "Pasture Mix",
+        url: "/#",
+      },
+      {
+        id: 8,
+        title: "Food Plot",
+        url: "/#",
+      },
+    ],
+  },
+  {
+    title: "Feed",
+    url: "/#",
+    children: [
+      {
+        id: 3,
+        title: "Equine",
+        url: "/#",
+      },
+      {
+        id: 4,
+        title: "Swine",
+        url: "/#",
+      },
+      {
+        id: 5,
+        title: "Calf",
+        url: "/#",
+      },
+      {
+        id: 6,
+        title: "Sheep",
+        url: "/#",
+      },
+      {
+        id: 7,
+        title: "Goat",
+        url: "/#",
+      },
+      {
+        id: 8,
+        title: "Poultry",
+        url: "/#",
+      },
+      {
+        id: 9,
+        title: "Beef",
+        url: "/#",
+      },
+      {
+        id: 10,
+        title: "Dairy",
+        url: "/#",
+      },
+      {
+        id: 11,
+        title: "Pet",
+        url: "/#",
+      },
+      {
+        id: 12,
+        title: "Rabbit",
+        url: "/#",
+      },
+      {
+        id: 13,
+        title: "Lactation",
+        url: "/#",
+      },
+      {
+        id: 14,
+        title: "Full truckloads",
+        url: "/#",
+      },
+    ],
+  },
+  {
+    title: "Commodities",
+    url: "/#",
+    children: [
+      {
+        id: 8,
+        title: "About",
+        url: "/#",
+      },
+      {
+        id: 9,
+        title: "Products",
+        url: "/#",
+      },
+      {
+        id: 10,
+        title: "Team",
+        url: "/#",
+      },
+    ],
+  },
+  {
+    title: "Garden Center",
+    url: "/#",
+    children: [
+      {
+        id: 5,
+        title: "Hours",
+        url: "/#",
+      },
+      {
+        id: 6,
+        title: "Fertilizer",
+        url: "/#",
+      },
+      {
+        id: 7,
+        title: "Soil",
+        url: "/#",
+      },
+    ],
+  },
+];
 
 export default function IndexSectionHeadersDarkReversePattern1() {
   React.useEffect(() => {
@@ -31,6 +227,17 @@ export default function IndexSectionHeadersDarkReversePattern1() {
     }
   };
 
+  const linkTransformer = (menuItem) => {
+    return (
+      <a
+        className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300 text-nowrap p-2"
+        href={menuItem.url}
+      >
+        {menuItem.title}
+      </a>
+    );
+  };
+
   return (
     <React.Fragment>
       <>
@@ -59,56 +266,18 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
-                <div className="w-auto">
+                <div className="w-auto h-8">
                   {" "}
                   <div className="flex flex-wrap items-center">
                     {" "}
                     <div className="w-auto hidden lg:block">
-                      {" "}
-                      <ul className="flex items-center justify-center">
-                        {" "}
-                        <li className="mr-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Store
-                          </a>
-                        </li>{" "}
-                        <li className="mr-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Commodities
-                          </a>
-                        </li>{" "}
-                        <li className="mr-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Feed
-                          </a>
-                        </li>{" "}
-                        <li className="mr-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Seed
-                          </a>
-                        </li>{" "}
-                        <li className>
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Garden Center
-                          </a>
-                        </li>{" "}
-                        <li> </li>
-                      </ul>{" "}
+                      <ReactNestedMenu
+                        navParentClassname="nested flex items-start justify-center"
+                        navTopLevelParentClassname="nested"
+                        navChildClassname="w-full text-center ml-2"
+                        linkTransformer={linkTransformer}
+                        menuData={menu}
+                      />
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
@@ -219,50 +388,13 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                       </div>{" "}
                     </div>{" "}
                     <div className="flex flex-col justify-center py-8 w-full">
-                      {" "}
-                      <ul>
-                        {" "}
-                        <li className="mb-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Store
-                          </a>
-                        </li>{" "}
-                        <li className="mb-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Commodities
-                          </a>
-                        </li>{" "}
-                        <li className="mb-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Feed
-                          </a>
-                        </li>{" "}
-                        <li className="mb-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Seed
-                          </a>
-                        </li>{" "}
-                        <li className="mb-9">
-                          <a
-                            className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
-                            href="#"
-                          >
-                            Garden Center
-                          </a>
-                        </li>{" "}
-                      </ul>{" "}
+                      <ReactNestedMenu
+                        navParentClassname="not-nested"
+                        navTopLevelParentClassname="vertical menu"
+                        navChildClassname="ml-8"
+                        linkTransformer={linkTransformer}
+                        menuData={menu}
+                      />
                     </div>{" "}
                   </div>{" "}
                 </nav>{" "}

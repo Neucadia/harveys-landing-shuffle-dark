@@ -672,12 +672,12 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-9 {
-  margin-bottom: 2.25rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
-.mr-9 {
-  margin-right: 2.25rem;
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .block {
@@ -698,6 +698,10 @@ video {
 
 .h-1\/2 {
   height: 50%;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-auto {
@@ -758,6 +762,10 @@ video {
   align-content: flex-start;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -780,6 +788,10 @@ video {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
 }
 
 .rounded-3xl {
@@ -1063,6 +1075,51 @@ input[type="checkbox"]:checked + div svg {
 input[type="checkbox"]:disabled + div {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
+nav {
+  overflow: scroll;
+  scrollbar-color: #364c82 #080f20;
+  scrollbar-width: thin;
+}
+
+.nested > li > ul {
+  visibility: hidden;
+  flex-direction: column;
+  position: relative;
+  z-index: 1000;
+}
+
+.nested > li > a:focus ~ ul {
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.nested > li > a ~ ul > li {
+  --tw-bg-opacity: 1;
+  background-color: #111827;
+  border-top: 1px solid #263351;
+  border-bottom: 1px solid #06090f;
+}
+
+.nested .nested li {
+  margin-left: 0;
 }
 
 .hover\:bg-gray-200:hover {
