@@ -28,9 +28,9 @@ export default function IndexSectionFeaturesLightReverse2() {
                 </div>{" "}
                 <div className="w-full md:w-1/2 p-8">
                   {" "}
-                  <div className="flex flex-wrap -m-4">
+                  <div className="flex flex-wrap">
                     {" "}
-                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={0}>
+                    <div className="flip w-full xl:w-2/5" tabIndex={0}>
                       {" "}
                       <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
@@ -62,7 +62,7 @@ export default function IndexSectionFeaturesLightReverse2() {
                         </h3>{" "}
                       </div>{" "}
                     </div>{" "}
-                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={1}>
+                    <div className="flip w-full xl:w-2/5" tabIndex={1}>
                       {" "}
                       <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
@@ -109,7 +109,7 @@ export default function IndexSectionFeaturesLightReverse2() {
                         </h3>{" "}
                       </div>{" "}
                     </div>{" "}
-                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={2}>
+                    <div className="flip w-full xl:w-2/5" tabIndex={2}>
                       {" "}
                       <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
@@ -140,7 +140,7 @@ export default function IndexSectionFeaturesLightReverse2() {
                         </h3>{" "}
                       </div>{" "}
                     </div>
-                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={3}>
+                    <div className="flip w-full xl:w-2/5" tabIndex={3}>
                       <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
                         <svg
@@ -190,7 +190,7 @@ export default function IndexSectionFeaturesLightReverse2() {
                         </h3>{" "}
                       </div>{" "}
                     </div>{" "}
-                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={4}>
+                    <div className="flip w-full xl:w-2/5" tabIndex={4}>
                       {" "}
                       <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
