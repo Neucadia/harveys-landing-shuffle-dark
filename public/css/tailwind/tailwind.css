@@ -758,20 +758,12 @@ video {
   flex-wrap: wrap;
 }
 
-.content-start {
-  align-content: flex-start;
-}
-
 .items-start {
   align-items: flex-start;
 }
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -861,6 +853,10 @@ video {
 
 .fill-green-700 {
   fill: #047857;
+}
+
+.fill-orange-400 {
+  fill: #fb923c;
 }
 
 .fill-orange-600 {
@@ -1120,6 +1116,33 @@ nav {
 
 .nested .nested li {
   margin-left: 0;
+}
+
+.flip {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  transform-origin: center center;
+  height: 250px;
+  perspective: 1000px;
+  margin-bottom: 1em;
+}
+
+.flip:focus {
+  transform: rotateY(180deg);
+}
+
+.card {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.back {
+  transform: rotateY(180deg);
 }
 
 .hover\:bg-gray-200:hover {

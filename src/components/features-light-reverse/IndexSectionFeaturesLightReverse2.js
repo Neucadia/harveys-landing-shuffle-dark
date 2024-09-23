@@ -30,15 +30,15 @@ export default function IndexSectionFeaturesLightReverse2() {
                   {" "}
                   <div className="flex flex-wrap -m-4">
                     {" "}
-                    <div className="w-full lg:w-1/2 p-4">
+                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={0}>
                       {" "}
-                      <div className="flex flex-col p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl justify-end">
+                      <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           version="1.1"
                           viewBox="0 0 83.8 34.4"
-                          className="mb-28 w-14 fill-red-700 py-10 py-6"
+                          className="w-14 fill-red-700 py-10 py-6"
                         >
                           {/* Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  */}
                           <g>
@@ -55,10 +55,16 @@ export default function IndexSectionFeaturesLightReverse2() {
                           Store
                         </h3>{" "}
                       </div>{" "}
+                      <div className="card back p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
+                        <h3 className="font-heading text-xl font-black xl:w-40 text-red-700">
+                          Workwear, footwear, premium lifestyle clothing, pet
+                          and birdfeeder supplies, &amp; much more.
+                        </h3>{" "}
+                      </div>{" "}
                     </div>{" "}
-                    <div className="w-full lg:w-1/2 p-4">
+                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={1}>
                       {" "}
-                      <div className="flex flex-col justify-between p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
+                      <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -96,10 +102,16 @@ export default function IndexSectionFeaturesLightReverse2() {
                           Commodities
                         </h3>{" "}
                       </div>{" "}
+                      <div className="card back p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
+                        <h3 className="font-heading text-xl font-black xl:w-40 text-orange-600">
+                          Livestock feed merchandising, freight brokerage,
+                          end-to-end logistics.
+                        </h3>{" "}
+                      </div>{" "}
                     </div>{" "}
-                    <div className="w-full lg:w-1/2 p-4">
+                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={2}>
                       {" "}
-                      <div className="flex flex-col justify-between p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
+                      <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +125,7 @@ export default function IndexSectionFeaturesLightReverse2() {
                           viewBox="0 0 1600 1200"
                           style={{ enableBackground: "new 0 0 1600 1200" }}
                           xmlSpace="preserve"
-                          className="mb-28 fill-green-700 h-auto w-14 py-6"
+                          className=" fill-green-700 h-auto w-14 py-6"
                         >
                           <path d="M927.3,258.9c12.1,0,17-0.1,19-0.1c0.3,0,6.6,8.4,9.3,12.9c5.7,7.3,18.4,25.7,27,37.8c-3.8,0.2-7.6,0-11.5,0  c1.2,37.8,2.6,112.2,2.1,113.3c13.5,5.4,28.7,12.5,41.8,18.8c15.9,6.9,30.7,13.9,46.3,22.9c53.5,30.4,106.5,61.5,159.6,92.6  c0,0.3,0,0.7,0,1c-3.5,0-6.9,0-10.5,0c0,87.6,0,175.2,0,265.5c-139.5,18.4-254,33.1-390.5,49.3c0-53.3,0-106.7,0-161.6  c-18-8.5-33.2-22.3-50.3-32.7c-40-27.1-80.2-53.9-120.1-81.2c-7.3-4-13.5-11.8-21.8-12.8c-13.1,8.7-24.7,20-37.2,29.6  c-27.4,22.4-54.9,44.8-82.4,67.2c-9.8,7.9-19.5,15.9-29.2,24c-2.3,1.7-2.3,1.7-4.4,1.7c0,3.1,0,6.2,0,9.4c-8,0-15.9,0-24.1,0  c11-11.3,23.6-20.4,35.7-30.4c-20.7,0-41.3-0.2-62-0.2c-7.5-0.2-15.8,2-18.8-7.2c16.6-6.9,33.3-17.1,50.4-22  c-0.2-49,1.5-97.9,1-146.9c-0.7,1-1.4,2.1-2.1,3.1c-6.4,0.8-13.4-0.1-19.9,0c56.5-52.1,117.6-99.6,175.6-150.1  c11.7-10.3,23.8-19.8,35.4-30.3c5.7-5.2,5.7-5.2,10-5.4c21.6,6.6,45.5,12.8,66.6,20c-0.2-14.4,0.4-28.7,1-43c-3.1,0-6.2,0-9.4,0  c9.6-11.6,21.3-21.1,32.1-31.4c9.2-10.2,14-12.4,27.9-11.4C825.1,260.8,876.2,259.8,927.3,258.9z M727.5,304.2c0,14.2,0,28.4,0,43  c55.9,18.7,112.5,37.3,169,53.5c0-31.2,0-62.3,0-94.4C839.6,304.3,784.6,304.2,727.5,304.2z M648,339.6  c-59.5,50.8-118.8,101.9-179,151.8c-8,3.6-8.9,11.4-8.1,19.2c-0.1,11.5,0.1,23,0,34.6c-0.1,36.2,0,72.4,0,108.5  c17.1,0.2,34.1-0.8,51.2-1.5c12.4-0.1,19.7,0.2,29.1-8.2c20.8-16.9,42.5-32.8,63.6-49.3c6.8-4.3,18.5-17.1,25.1-16.5  c39.6,6.5,79.1,14.4,118.9,19.8c9.3,0.8,16.2,5.9,23.7,11.1c7.5,5.3,15.6,9.7,23.4,14.5c34.6,20.8,68.9,42.1,103.4,63  c4.9,3,9.9,6,14.7,9.1c3.1,2.3,3.1,2.3,5.6,2.1c1-50.7,0.3-104.2,0.3-152c-0.6-25-0.1-41.6-0.2-60.4c0,0-135.1-77.1-201.1-115.5  c-16.1-9.4-32.1-18.8-48-28.4C661.6,336.8,656.5,328.7,648,339.6z M965.8,535.1c0,25.6,0,51.3,0,77.7c11.3,2.2,11.3,2.2,17.8,2.1  c0-25.3,0-50.6,0-76.6C975.2,535.9,975.2,535.9,965.8,535.1z M1028.8,548.7c0,23.2,0,46.4,0,70.3c9.4,2.2,9.4,2.2,14.7,2.1  c1.3-23.1,1.2-46.2,1-69.3C1039.2,550.8,1034.4,548.4,1028.8,548.7z M1088.6,561.3c0,21.8,0,43.6,0,66.1c4.7,1.3,4.7,1.3,11.5,1  c0-21.5,0-42.9,0-65.1C1092.7,561.2,1092.7,561.2,1088.6,561.3z M1134.8,568.7c0,21.5,0,42.9,0,65.1c4.1,1,7.4,1.1,11.5,1  c0.1-21.4,0.2-42.7-1-64C1141.9,570.1,1138.4,569.4,1134.8,568.7z M1178.9,580.2c0,19,0,38.1,0,57.7c3.1,0.3,6.2,0.7,9.4,1  c0-19,0-38.1,0-57.7C1185.3,580.9,1182.1,580.6,1178.9,580.2z M965.8,718.7c0,25.6,0,51.3,0,77.7c9.5-0.5,9.5-0.5,18.9-2.1  c0-24.2,0-48.5,0-73.5C972.5,718.6,972.5,718.6,965.8,718.7z M1028.8,718.7c0,24.2,0,48.5,0,73.5c9.6,0.1,9.6,0.1,18.9-1  c0.2-35.7,0.2-35.7-1-71.4C1040.5,718.7,1035.3,718.7,1028.8,718.7z M1134.8,722.9c0,19.7,0,39.5,0,59.8c3.8,0,7.6,0,11.5,0  c0-19.4,0-38.8,0-58.8C1141.7,722.6,1141.7,722.6,1134.8,722.9z M1178.9,725c0,18,0,36,0,54.6c3.1,0,6.2,0,9.4,0  c1.2-17.8,1.2-35.6,1-53.5C1186,725.7,1182.5,725.4,1178.9,725z" />
                         </svg>{" "}
@@ -121,10 +133,15 @@ export default function IndexSectionFeaturesLightReverse2() {
                           Feed
                         </h3>{" "}
                       </div>{" "}
-                    </div>{" "}
-                    <div className="w-full lg:w-1/2 p-4">
-                      {" "}
-                      <div className="flex flex-col justify-between p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl content-start">
+                      <div className="card back p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
+                        <h3 className="font-heading text-xl font-black xl:w-40 text-green-700">
+                          Calf, cattle, dairy, equine, goat, poultry, rabbit,
+                          swine custom mixes and stock mixes.
+                        </h3>{" "}
+                      </div>{" "}
+                    </div>
+                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={3}>
+                      <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -138,15 +155,8 @@ export default function IndexSectionFeaturesLightReverse2() {
                           viewBox="0 0 1920 1080"
                           style={{ enableBackground: "new 0 0 1920 1080" }}
                           xmlSpace="preserve"
-                          className="mb-28 w-14"
+                          className="w-14 fill-orange-400"
                         >
-                          <style
-                            type="text/css"
-                            dangerouslySetInnerHTML={{
-                              __html:
-                                "\n      \t.st0{fill:none;}\n      \t.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#494949;}\n      ",
-                            }}
-                          />
                           <g>
                             <path
                               className="st0"
@@ -173,10 +183,16 @@ export default function IndexSectionFeaturesLightReverse2() {
                           Seed
                         </h3>{" "}
                       </div>{" "}
+                      <div className="card back p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
+                        <h3 className="font-heading text-xl font-black xl:w-40 text-yellow-500">
+                          Alfalfa, corn, soybeans, silage, wheat, and a full
+                          catalogue of cover cropping and food plot solutions.
+                        </h3>{" "}
+                      </div>{" "}
                     </div>{" "}
-                    <div className="w-full lg:w-1/2 p-4">
+                    <div className="flip w-full lg:w-1/2 p-4" tabIndex={4}>
                       {" "}
-                      <div className="flex flex-col justify-between p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
+                      <div className="card p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
                         {" "}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -184,16 +200,8 @@ export default function IndexSectionFeaturesLightReverse2() {
                           height={14}
                           version="1.1"
                           viewBox="0 0 1920 1080"
-                          className="mb-28 h-auto w-14 py-6 fill-purple-500"
+                          className="h-auto w-14 py-6 fill-purple-500"
                         >
-                          <defs>
-                            <style
-                              dangerouslySetInnerHTML={{
-                                __html:
-                                  "\n            .cls-1 {\n              fill: none;\n              stroke: #fff;\n              stroke-miterlimit: 10;\n            }\n          ",
-                              }}
-                            />
-                          </defs>
                           {/* Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  */}
                           <g>
                             <g id="Layer_1">
@@ -209,6 +217,12 @@ export default function IndexSectionFeaturesLightReverse2() {
                         </svg>{" "}
                         <h3 className="font-heading text-xl font-black xl:w-40 text-purple-500">
                           Garden Center
+                        </h3>{" "}
+                      </div>{" "}
+                      <div className="card back p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl">
+                        <h3 className="font-heading text-xl font-black xl:w-40 text-purple-500">
+                          Seasonal fertilizer, soil, annuals, perennials,
+                          shrubs, trees, and much more.
                         </h3>{" "}
                       </div>{" "}
                     </div>{" "}
