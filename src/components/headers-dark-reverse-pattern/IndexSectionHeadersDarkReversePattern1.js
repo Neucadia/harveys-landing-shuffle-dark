@@ -255,6 +255,7 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                     {" "}
                     <div className="w-auto">
                       {" "}
+                      {/* eslint-disable-next-line */}
                       <a href="#">
                         {" "}
                         <img
@@ -350,6 +351,7 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                         {" "}
                         <div className="w-auto p-2">
                           {" "}
+                          {/* eslint-disable-next-line */}
                           <a className="inline-block" href="#">
                             {" "}
                             <img
