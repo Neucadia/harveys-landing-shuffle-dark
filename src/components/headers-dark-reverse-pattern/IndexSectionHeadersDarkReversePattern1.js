@@ -50,37 +50,37 @@ const menu = [
     ],
   },
   {
-    id: 2,
+    id: 12,
     title: "Seed",
     url: "/#",
     children: [
       {
-        id: 3,
+        id: 13,
         title: "Corn",
         url: "/#",
       },
       {
-        id: 4,
+        id: 14,
         title: "Soybeans",
         url: "/#",
       },
       {
-        id: 5,
+        id: 15,
         title: "Wheat",
         url: "/#",
       },
       {
-        id: 6,
+        id: 16,
         title: "Cover Crop",
         url: "/#",
       },
       {
-        id: 7,
+        id: 17,
         title: "Pasture Mix",
         url: "/#",
       },
       {
-        id: 8,
+        id: 18,
         title: "Food Plot",
         url: "/#",
       },
@@ -91,62 +91,62 @@ const menu = [
     url: "/#",
     children: [
       {
-        id: 3,
+        id: 23,
         title: "Equine",
         url: "/#",
       },
       {
-        id: 4,
+        id: 24,
         title: "Swine",
         url: "/#",
       },
       {
-        id: 5,
+        id: 25,
         title: "Calf",
         url: "/#",
       },
       {
-        id: 6,
+        id: 26,
         title: "Sheep",
         url: "/#",
       },
       {
-        id: 7,
+        id: 27,
         title: "Goat",
         url: "/#",
       },
       {
-        id: 8,
+        id: 28,
         title: "Poultry",
         url: "/#",
       },
       {
-        id: 9,
+        id: 29,
         title: "Beef",
         url: "/#",
       },
       {
-        id: 10,
+        id: 30,
         title: "Dairy",
         url: "/#",
       },
       {
-        id: 11,
+        id: 31,
         title: "Pet",
         url: "/#",
       },
       {
-        id: 12,
+        id: 32,
         title: "Rabbit",
         url: "/#",
       },
       {
-        id: 13,
+        id: 33,
         title: "Lactation",
         url: "/#",
       },
       {
-        id: 14,
+        id: 34,
         title: "Full truckloads",
         url: "/#",
       },
@@ -157,17 +157,17 @@ const menu = [
     url: "/#",
     children: [
       {
-        id: 8,
+        id: 48,
         title: "About",
         url: "/#",
       },
       {
-        id: 9,
+        id: 49,
         title: "Products",
         url: "/#",
       },
       {
-        id: 10,
+        id: 40,
         title: "Team",
         url: "/#",
       },
@@ -178,17 +178,17 @@ const menu = [
     url: "/#",
     children: [
       {
-        id: 5,
+        id: 55,
         title: "Hours",
         url: "/#",
       },
       {
-        id: 6,
+        id: 56,
         title: "Fertilizer",
         url: "/#",
       },
       {
-        id: 7,
+        id: 57,
         title: "Soil",
         url: "/#",
       },
@@ -259,7 +259,7 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                         {" "}
                         <img
                           src="https://static.shuffle.dev/uploads/files/b0/b0f89fa6cd6263ad0469015a5dd9e4a83056f302/logo-png-1726158335343.webp"
-                          alt
+                          alt="Harvey's"
                           className
                         />{" "}
                       </a>{" "}
@@ -354,7 +354,7 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                             {" "}
                             <img
                               src="https://static.shuffle.dev/uploads/files/b0/b0f89fa6cd6263ad0469015a5dd9e4a83056f302/logo-png-1726158335343.webp"
-                              alt
+                              alt="Harvey's"
                             />{" "}
                           </a>{" "}
                         </div>{" "}
@@ -405,7 +405,10 @@ export default function IndexSectionHeadersDarkReversePattern1() {
               <div className="absolute top-1/2 left-1/2 min-w-max transform -translate-x-1/2 -translate-y-1/2">
                 {" "}
                 <div className="absolute bg-gradient-radial-dark w-full h-full" />{" "}
-                <img src="zanrly-assets/images/pattern-dark.png" alt />{" "}
+                <img
+                  src="zanrly-assets/images/pattern-dark.png"
+                  alt="pattern"
+                />{" "}
               </div>{" "}
               <div className="relative px-8 pt-20">
                 {" "}
@@ -447,6 +450,7 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                     isPlaying ? `hidden` : ``
                   }`}
                   onClick={handleClick}
+                  tabIndex={-1}
                 >
                   Watch Video
                 </a>{" "}
