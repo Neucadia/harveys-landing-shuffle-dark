@@ -447,6 +447,7 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                   <source src="bg.webm" type="video/webm" />
                   <source src="bg.mp4" type="video/mp4" />
                 </video>
+                {/* eslint-disable-next-line */}
                 <a
                   className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block px-8 py-3.5 text-lg text-center text-gray-900 font-bold bg-gray-50 hover:bg-gray-200 focus:ring-4 focus:ring-gray-200 rounded-full ${
                     isPlaying ? `hidden` : ``
