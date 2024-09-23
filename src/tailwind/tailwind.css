@@ -40,6 +40,12 @@ nav {
   scrollbar-width: thin;
 }
 
+.nested {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .nested > li > ul {
   visibility: hidden;
   flex-direction: column;
