@@ -259,9 +259,9 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                       <a href="#">
                         {" "}
                         <img
-                          src="https://static.shuffle.dev/uploads/files/b0/b0f89fa6cd6263ad0469015a5dd9e4a83056f302/logo-png-1726158335343.webp"
+                          src="/zanrly-assets/logos/harveys-script-white.svg"
                           alt="Harvey's"
-                          className
+                          className="w-32"
                         />{" "}
                       </a>{" "}
                     </div>{" "}
@@ -355,8 +355,9 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                           <a className="inline-block" href="#">
                             {" "}
                             <img
-                              src="https://static.shuffle.dev/uploads/files/b0/b0f89fa6cd6263ad0469015a5dd9e4a83056f302/logo-png-1726158335343.webp"
+                              src="/zanrly-assets/logos/harveys-script-white.svg"
                               alt="Harvey's"
+                              className="w-32"
                             />{" "}
                           </a>{" "}
                         </div>{" "}
