@@ -196,6 +196,15 @@ const menu = [
   },
 ];
 
+const logos = [
+  {
+    url: "zanrly-assets/logos/harveys-tiller-white.svg",
+  },
+  {
+    url: "zanrly-assets/logos/harveys-script-white.svg",
+  },
+];
+
 export default function IndexSectionHeadersDarkReversePattern1() {
   React.useEffect(() => {
     var promise = ref.current.pause();
@@ -214,6 +223,7 @@ export default function IndexSectionHeadersDarkReversePattern1() {
   }, []);
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [navOpen, setNavOpen] = React.useState(false);
+  const [logoURL, setLogoURL] = React.useState(logos[0].url);
   const ref = React.useRef(null);
 
   const handleClick = () => {
@@ -256,10 +266,19 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                     <div className="w-auto">
                       {" "}
                       {/* eslint-disable-next-line */}
-                      <a href="#">
+                      <a
+                        href="#"
+                        onClick={() =>
+                          setLogoURL(
+                            logos[
+                              logos.findIndex((logo) => logo.url !== logoURL)
+                            ].url
+                          )
+                        }
+                      >
                         {" "}
                         <img
-                          src="/zanrly-assets/logos/harveys-script-white.svg"
+                          src={logoURL}
                           alt="Harvey's"
                           className="w-32"
                         />{" "}
@@ -330,7 +349,11 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                 </div>{" "}
                 <div className="w-auto md:hidden lg:block" />{" "}
               </div>{" "}
-              <div className="fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 block">
+              <div
+                className={`fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 block ${
+                  navOpen ? `visible` : `hidden`
+                }`}
+              >
                 {" "}
                 <div
                   className={`inset-0 bg-gray-800 opacity-80 ${
@@ -352,10 +375,22 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                         <div className="w-auto p-2">
                           {" "}
                           {/* eslint-disable-next-line */}
-                          <a className="inline-block" href="#">
+                          <a
+                            className="inline-block"
+                            href="#"
+                            onClick={() =>
+                              setLogoURL(
+                                logos[
+                                  logos.findIndex(
+                                    (logo) => logo.url !== logoURL
+                                  )
+                                ].url
+                              )
+                            }
+                          >
                             {" "}
                             <img
-                              src="/zanrly-assets/logos/harveys-script-white.svg"
+                              src={logoURL}
                               alt="Harvey's"
                               className="w-32"
                             />{" "}
