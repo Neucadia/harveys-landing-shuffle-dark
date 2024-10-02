@@ -347,7 +347,6 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
-                <div className="w-auto md:hidden lg:block" />{" "}
               </div>{" "}
               <div
                 className={`fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 block ${
