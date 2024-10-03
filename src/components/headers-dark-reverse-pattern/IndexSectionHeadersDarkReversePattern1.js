@@ -370,15 +370,7 @@ export default function IndexSectionHeadersDarkReversePattern1({
                           <a
                             className="inline-block"
                             href="#"
-                            onClick={() =>
-                              setLogoURL(
-                                logos[
-                                  logos.findIndex(
-                                    (logo) => logo.name !== activeLogo.name
-                                  )
-                                ]
-                              )
-                            }
+                            onClick={changeLogo}
                           >
                             {" "}
                             <img
