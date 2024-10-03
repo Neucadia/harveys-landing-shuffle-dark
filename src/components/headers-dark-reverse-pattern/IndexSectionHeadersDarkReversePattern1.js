@@ -196,15 +196,6 @@ const menu = [
   },
 ];
 
-const logos = [
-  {
-    name: "tiller",
-  },
-  {
-    name: "script",
-  },
-];
-
 export default function IndexSectionHeadersDarkReversePattern1({
   activeLogo,
   changeLogo,
