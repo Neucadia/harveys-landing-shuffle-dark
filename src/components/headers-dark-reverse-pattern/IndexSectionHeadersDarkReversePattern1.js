@@ -198,14 +198,17 @@ const menu = [
 
 const logos = [
   {
-    url: "zanrly-assets/logos/harveys-tiller-white.svg",
+    name: "tiller",
   },
   {
-    url: "zanrly-assets/logos/harveys-script-white.svg",
+    name: "script",
   },
 ];
 
-export default function IndexSectionHeadersDarkReversePattern1() {
+export default function IndexSectionHeadersDarkReversePattern1({
+  activeLogo,
+  changeLogo,
+}) {
   React.useEffect(() => {
     var promise = ref.current.pause();
 
@@ -223,7 +226,6 @@ export default function IndexSectionHeadersDarkReversePattern1() {
   }, []);
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [navOpen, setNavOpen] = React.useState(false);
-  const [logoURL, setLogoURL] = React.useState(logos[0].url);
   const ref = React.useRef(null);
 
   const handleClick = () => {
@@ -266,19 +268,10 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                     <div className="w-auto">
                       {" "}
                       {/* eslint-disable-next-line */}
-                      <a
-                        href="#"
-                        onClick={() =>
-                          setLogoURL(
-                            logos[
-                              logos.findIndex((logo) => logo.url !== logoURL)
-                            ].url
-                          )
-                        }
-                      >
+                      <a href="#" onClick={changeLogo}>
                         {" "}
                         <img
-                          src={logoURL}
+                          src={`/zanrly-assets/logos/harveys-${activeLogo.name}-white.svg`}
                           alt="Harvey's"
                           className="w-32"
                         />{" "}
@@ -381,15 +374,15 @@ export default function IndexSectionHeadersDarkReversePattern1() {
                               setLogoURL(
                                 logos[
                                   logos.findIndex(
-                                    (logo) => logo.url !== logoURL
+                                    (logo) => logo.name !== activeLogo.name
                                   )
-                                ].url
+                                ]
                               )
                             }
                           >
                             {" "}
                             <img
-                              src={logoURL}
+                              src={`/zanrly-assets/logos/harveys-${activeLogo.name}-white.svg`}
                               alt="Harvey's"
                               className="w-32"
                             />{" "}
