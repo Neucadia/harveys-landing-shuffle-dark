@@ -211,64 +211,75 @@ const feed = [
     title: "Harvey's Horse 10%",
     protein: "10%",
     weight: "50 lbs",
+    slug: "/harveys-horse-10",
   },
   {
     id: 2,
     title: "Buckeye - Supreme 14",
     protein: "14%",
     weight: "40 lbs",
+    slug: "#",
   },
   {
     id: 3,
     title: "Buckeye - Safe 'N Easy Senior Pelleted",
     protein: "14%",
     weight: "40 lbs",
+    slug: "#",
   },
   {
     id: 4,
     title: "Buckeye - Safe 'N Easy Complete",
     protein: "12%",
     weight: "50 lbs",
+    slug: "#",
   },
   {
     id: 5,
     title: "Buckeye - Ultimate Finish 25",
     protein: "12%",
     weight: "40 lbs",
+    slug: "#",
   },
   {
     id: 6,
     title: "Buckeye - Gro 'N Win",
     protein: "32%",
     weight: "50 lbs",
+    slug: "#",
   },
   {
     id: 7,
     title: "Buckeye - EQ8 Gut Health",
     protein: "12%",
     weight: "50 lbs",
+    slug: "#",
   },
   {
     id: 8,
     title: "Buckeye - Apple Snap Treats",
     protein: "12%",
     weight: "4 lbs",
+    slug: "#",
   },
   {
     id: 9,
     title: "Buckeye - Carrot Crunchers Treats",
     protein: "12%",
     weight: "4 lbs",
+    slug: "#",
   },
   {
     id: 10,
     title: "Buckeye - Peppermint Bits Treats",
     protein: "12%",
     weight: "4 lbs",
+    slug: "#",
   },
 ];
 
 const EquinePage = () => {
+  /* eslint-disable-next-line */
   const [activeLogo, setActiveLogo] = React.useState(logos[0]);
   const [navOpen, setNavOpen] = React.useState(false);
 
@@ -517,9 +528,10 @@ const EquinePage = () => {
                                 <div className="w-full md:w-auto p-5">
                                   <div className="flex flex-wrap md:justify-center -m-2">
                                     <div className="w-full md:w-auto p-2">
+                                      {/* eslint-disable-next-line */}
                                       <a
                                         className="block w-full px-4 py-2.5 text-sm text-center font-bold focus:ring-4 rounded-full bg-green-500 focus:ring-green-50 hover:bg-green-600"
-                                        href="#"
+                                        href={item.slug}
                                       >
                                         Buy Now
                                       </a>
