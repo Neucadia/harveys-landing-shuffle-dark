@@ -30,6 +30,15 @@ input[type="checkbox"]:disabled + div {
   height: 2rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .text-nowrap {
   text-wrap: nowrap;
 }
@@ -53,7 +62,10 @@ nav {
   z-index: 1000;
 }
 
-.nested > li > a:focus ~ ul {
+.nested > li > a:focus ~ ul,
+.nested > li > a:hover ~ ul,
+.nested > li > a ~ ul:hover,
+.nested > li > a:hover ~ ul:focus {
   visibility: visible;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
