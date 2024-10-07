@@ -18,31 +18,6 @@ input[type="checkbox"]:disabled + div {
   @apply border-gray-200;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.py-2\.5 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
-.text-nowrap {
-  text-wrap: nowrap;
-}
-
 nav {
   overflow: scroll;
   scrollbar-color: #364c82 #080f20;

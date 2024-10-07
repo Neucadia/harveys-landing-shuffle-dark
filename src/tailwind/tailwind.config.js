@@ -972,7 +972,7 @@ module.exports = {
     "./src/html/*.html",
     "./src/pages/*.js",
     "./src/components/*/*.js",
-    "./src/pages/equine/*.js",
+    "./src/pages/*/*.js",
   ],
   plugins: [],
 };
